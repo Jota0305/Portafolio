@@ -3,12 +3,14 @@ import banner from "../assets/img/banner.jpeg";
 import profile from "../assets/img/jota.jpg";
 import {
   RiGithubFill,
-  RiLinkedinBoxFill,
+  RiLinkedinFill ,
   RiWhatsappFill,
   RiMessengerFill,
+  RiMoonLine,
+  RiSunLine 
 } from "react-icons/ri";
 
-function Header() {
+function Header({changeTheme}) {
   return (
     <div>
       <div className="relative">
@@ -32,7 +34,7 @@ function Header() {
                 <RiGithubFill className="w-5 h-5 md:w-8 md:h-8 bg-white rounded-full" />
               </a>
               <a href="https://www.linkedin.com/in/joseth/">
-                <RiLinkedinBoxFill className="w-5 h-5 md:w-8 md:h-8 bg-white rounded-full" />
+                <RiLinkedinFill  className="w-5 h-5 p-1 md:w-8 md:h-8 bg-white rounded-full" />
               </a>
               <a href="https://wa.me/message/6XASKC46BSZUI1">
                 <RiWhatsappFill className="w-5 h-5 md:w-8 md:h-8 bg-white rounded-full" />
@@ -42,6 +44,9 @@ function Header() {
               </a>
             </div>
           </div>
+          <button className="absolute flex inset-0 gap-6" onClick={changeTheme}>
+            <RiMoonLine className="w-6 h-6 text-white rounded-full"/>
+          </button>
         </div>
       </div>
     </div>
