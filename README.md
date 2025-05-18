@@ -1,2 +1,2 @@
 -Link:
-[Portafolio](portafolio-jota.netlify.app)
+[Portafolio](https://portafolio-jota.netlify.app/)
